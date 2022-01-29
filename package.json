@@ -1,0 +1,26 @@
+{
+  "name": "create-quack-project",
+  "version": "0.0.1-beta.0",
+  "description": "A CLI to aid in the development of Quack.js projects.",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/N-F9/quack.js-cli.git"
+  },
+  "bin": "./index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/N-F9/quack.js-cli/issues"
+  },
+  "homepage": "https://quack.nickf.me/",
+  "dependencies": {
+    "boxen": "^6.2.1",
+    "inquirer": "^8.2.0",
+    "nanospinner": "^1.0.0",
+    "picocolors": "^1.0.0"
+  }
+}
