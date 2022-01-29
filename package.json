@@ -1,5 +1,5 @@
 {
-  "name": "create-quack-project",
+  "name": "@n-f9/quack.js-cli",
   "version": "0.0.1-beta.0",
   "description": "A CLI to aid in the development of Quack.js projects.",
   "type": "module",
@@ -9,7 +9,9 @@
     "type": "git",
     "url": "git+https://github.com/N-F9/quack.js-cli.git"
   },
-  "bin": "./index.js",
+  "bin": {
+    "create-quack-project": "./index.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
