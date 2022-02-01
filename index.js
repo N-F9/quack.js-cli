@@ -1,13 +1,15 @@
+#!/usr/bin/env node
+
+// Next time, DONT FORGET THE SHEBANG... NICK
+
 import pc from 'picocolors'
 import inquirer from 'inquirer'
 import { createSpinner } from 'nanospinner'
 import fs from 'fs'
 import path from 'path'
 import boxen from 'boxen'
-import { fileURLToPath } from 'url';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const __dirname = path.resolve()
 const pwd = process.cwd()
 
 const sleep = (ms = 2000) => new Promise((r) => setTimeout(r, ms))
