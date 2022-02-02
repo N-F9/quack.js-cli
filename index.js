@@ -8,8 +8,11 @@ import { createSpinner } from 'nanospinner'
 import fs from 'fs'
 import path from 'path'
 import boxen from 'boxen'
+import { fileURLToPath } from 'url'
+import { dirname } from 'path'
 
-const __dirname = path.resolve()
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = dirname(__filename)
 const pwd = process.cwd()
 
 const sleep = (ms = 2000) => new Promise((r) => setTimeout(r, ms))
