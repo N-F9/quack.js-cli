@@ -86,12 +86,14 @@ if (type == 'typescript') {
 	copyFile('src/index.ts')
 	copyFile('src/modules/template.ts') 
 	copyFile('.env')
+	copyFile('.disabled.gitignore')
 } else {
 	copyFile('package.json')
 	copyFile('.prettierrc')
 	copyFile('src/index.js')
 	copyFile('src/modules/template.js') 
 	copyFile('.env')
+	copyFile('.disabled.gitignore')
 }
 
 const pack = JSON.parse(fs.readFileSync(path.join(pwd, name, 'package.json')).toString())
