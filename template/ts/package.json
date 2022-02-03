@@ -8,7 +8,7 @@
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json",
-    "dev": "node ./out/index.js"
+		"dev": "npm run build && node ./out/index.js"
   },
   "dependencies": {
     "@n-f9/quack.js": "^0.0.6",
