@@ -8,11 +8,11 @@
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json",    
-		"dev": "rm -rf ./out && npm run build && node ./out/index.js",
-		"compile": "npm run lint && npm run format && npm run dev"
+		"compile": "npm run lint && npm run format && rm -rf ./out && npm run build",
+		"dev": "npm run compile && node ./out/index.js"
   },
   "dependencies": {
-    "@n-f9/quack.js": "^0.0.6",
+    "@n-f9/quack.js": "1.0.0",
     "dotenv": "^10.0.0"
   },
   "devDependencies": {
