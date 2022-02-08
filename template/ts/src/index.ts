@@ -1,8 +1,12 @@
 import 'dotenv/config'
-import path from 'path'
 import { QuackJS, QuackJSUtils } from '@n-f9/quack.js'
+import path from 'path'
+import { fileURLToPath } from 'url'
 
-const Quack = new QuackJS(process.env.TOKEN as string, {}) 
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
+
+const Quack = new QuackJS(process.env.TOKEN as string, {})
 
 const files = QuackJSUtils.GetFiles('./out/modules')
 
@@ -13,6 +17,5 @@ const getModules = async () => {
 	}
 }
 
-getModules().then(() => {
-	Quack.Start(Quack)
-})
+await getModules()
+await Quack.Start(Quack)
