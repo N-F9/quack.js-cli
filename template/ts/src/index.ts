@@ -16,5 +16,5 @@ const getModules = async () => {
 }
 
 getModules().then(() => {
-  Quack.Start(Quack)
+	Quack.Start(Quack)
 })

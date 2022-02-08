@@ -28,7 +28,7 @@ console.log(boxen(pc.bold(pc.yellow('Quack.js CLI')) + '\n' + pc.black('http://q
 }));
 
 const { name, type } = await inquirer
-  .prompt([
+	.prompt([
 		{
 			type: 'input',
 			name: 'name',
@@ -56,11 +56,11 @@ const { name, type } = await inquirer
 				return value.toLowerCase()
 			},
 		},
-  ])
-  .catch((error) => {
+	])
+	.catch((error) => {
 		console.log(pc.red('Oh no! An error occurred!'))
 		process.exit(1)
-  })
+	})
 
 const createDir = (p) => {
 	if (!fs.existsSync(p)) {
