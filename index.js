@@ -89,7 +89,6 @@ if (type == 'typescript') {
 	copyFile('.disabled.gitignore')
 } else {
 	copyFile('package.json')
-	copyFile('.prettierrc')
 	copyFile('src/index.js')
 	copyFile('src/modules/template.js') 
 	copyFile('.env')
