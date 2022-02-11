@@ -1,6 +1,6 @@
 {
 	"name": "@n-f9/quack.js-cli",
-	"version": "1.0.0-beta.1",
+	"version": "1.0.0-beta.2",
 	"description": "A CLI to aid in the development of Quack.js projects.",
 	"type": "module",
 	"main": "index.js",
