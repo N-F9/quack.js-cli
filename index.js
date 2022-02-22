@@ -79,7 +79,7 @@ createDir(path.join(pwd, name, 'src'))
 createDir(path.join(pwd, name, 'src', 'modules'))
 
 if (type == 'typescript') {
-	copyFile('tslint.json')
+	copyFile('.eslintrc.yml')
 	copyFile('tsconfig.json')
 	copyFile('package.json')
 	copyFile('.prettierrc')
